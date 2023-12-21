@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Upload Success</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #009688;
+        }
+
+        p {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        a {
+            color: #009688;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Upload Successful!</h1>
+    <p>Your image has been successfully uploaded to AWS S3.</p>
+    
+    <img src="{{ s3_url }}" alt="Uploaded Image">
+
+    <p>Image URL: <a href="{{ s3_url }}" target="_blank">{{ s3_url }}</a></p>
+    
+    <!-- You can add more content or customize this page as needed -->
+
+    <p><a href="/">Back to Home</a></p>
+</body>
+</html>
